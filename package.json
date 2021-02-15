@@ -1,0 +1,10 @@
+{
+  "name": "ts-course",
+  "version": "1.0.0",
+  "description": "They said I should create a TypeScript course, so I did.",
+  "main": "src/index.ts",
+  "repository": "git@github.com:h2xd/ts-course.git",
+  "author": "Andreas Schujkow <a.schujkow@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
