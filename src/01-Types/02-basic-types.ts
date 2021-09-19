@@ -22,9 +22,11 @@ const anarchyData: any = {
   hasFoundTheAnswer: false
 }
 
-const superSpecialCase: unknown = null
+// vielleicht zu verwirrend
+// const superSpecialCase: unknown = null
 
 function openTheDoor(): void {
+  isActive
   console.log('Door is open!')
 }
 
