@@ -6,5 +6,11 @@
   "repository": "git@github.com:h2xd/ts-course.git",
   "author": "Andreas Schujkow <a.schujkow@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "present-01": "yarn marp src/01-types/presentation.md --preview"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.4.0"
+  }
 }
