@@ -1,4 +1,5 @@
-// TODO: Find a good example for enums
+// Whats that?!
+// -> Collection of named constants
 
 // 01: How to write them
 enum Direction {
