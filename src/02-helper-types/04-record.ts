@@ -10,8 +10,8 @@ const CerealConfiguration: BooleanConfiguration = {
   iron: true,
 }
 
-// better 🙆
-// seven characters less to write 👍
+// 🦥🦥🦥
+// seven characters less to write + single line
 type BetterBooleanConfiguration = Record<string, boolean>
 
 const BetterCerealConfiguration: BetterBooleanConfiguration = {

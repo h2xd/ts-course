@@ -8,8 +8,9 @@ enum CerealExtrasAsEnum {
 type CerealExtra = keyof typeof CerealExtrasAsEnum
 type SelectableCerealExtras = Record<CerealExtra, boolean>
 
-// Did you say SHoCoLatE?!?!
-// https://www.youtube.com/watch?v=7kkh22D6UQY
-const ChocolateWithOrWithoutNuts: SelectableCerealExtras = {
+// i can't be the only one
+const YeetDezRaisins: SelectableCerealExtras = {
+  WALNUTS: true,
   CHOCOLATE: true,
+  STRAWBERRIES: true
 }

@@ -12,7 +12,6 @@ function wowThatAdventurerLostHisMind(): Required<Debts> {
 
 }
 
-
 wowThatAdventurerLostHisMind()
 
 console.log(AdventurerDebts)
