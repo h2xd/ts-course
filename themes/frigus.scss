@@ -1,25 +1,28 @@
 /* @theme frigus */
 
 @import 'uncover';
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
   --text-position: left;
   --background-color: #fff;
-  --text-color: #333;
+  --text-color: #072550;
 }
 
 section {
   /* Override default background */
   background: var(--background-color);
   color: var(--text-color);
+  font-family: 'Mukta', sans-serif;
+}
 
-  &.highlight {
-    --text-position: center;
-    --background-color: blue;
-    --text-color: #fff;
-  }
+.highlight {
+  --text-position: center;
+  --background-color: blue;
+  --text-color: #fff;
+}
 
-  h1 {
-    font-size: 3rem;
-  }
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
 }

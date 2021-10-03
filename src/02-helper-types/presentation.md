@@ -29,8 +29,8 @@ _Ein paar Worte aus und für die Community_
 # Normale Objekt Konfiguration
 
 ```ts
-type YourMom = {
-  key: string
+type BooleanConfiguration = {
+  [index: string]: boolean
 }
 ```
 
