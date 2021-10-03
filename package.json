@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "present-01": "yarn marp src/01-types/presentation.md --preview"
+    "pp01": "yarn marp src/01-types/presentation.md --preview --no-sandbox --theme-set ./themes/frigus.scss",
+    "pp02": "yarn marp src/02-helper-types/presentation.md --preview --no-sandbox --theme-set ./themes/frigus.scss"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^1.4.0"

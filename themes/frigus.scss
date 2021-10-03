@@ -1,0 +1,25 @@
+/* @theme frigus */
+
+@import 'uncover';
+
+:root {
+  --text-position: left;
+  --background-color: #fff;
+  --text-color: #333;
+}
+
+section {
+  /* Override default background */
+  background: var(--background-color);
+  color: var(--text-color);
+
+  &.highlight {
+    --text-position: center;
+    --background-color: blue;
+    --text-color: #fff;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
