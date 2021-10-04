@@ -28,9 +28,9 @@ type CerealConfiguration = {
 
 // create a default that can be extended 🧩
 const DEFAULT_CEREAL_CONFIGURATION: CerealConfiguration = {
-  flakes: CerealFlakes.WHOLE_GRAIN,
-  fluid: CerealFluid.SKIR,
-  extras: [CerealExtra.WALNUTS, CerealExtra.STRAWBERRIES]
+  flakes: CerealFlakes.CRUNCHY,
+  fluid: CerealFluid.OAT_MILK,
+  extras: [CerealExtra.CHOCOLATE]
 }
 
 function configurateCereal(config: Partial<CerealConfiguration>): CerealConfiguration {
@@ -42,7 +42,6 @@ function configurateCereal(config: Partial<CerealConfiguration>): CerealConfigur
 
 // plEaSe StoP, i cAn'T tAKe iT anY mOrE 🚓👮
 console.log(configurateCereal({
-  flakes: CerealFlakes.CRUNCHY,
   fluid: CerealFluid.WATER,
   extras: [CerealExtra.RAISINS] // you will hate them too: https://www.youtube.com/watch?v=jyn_MFPkAds
 }))
@@ -52,5 +51,19 @@ console.log(configurateCereal({
 const LOW_MAINTENANCE_CONFIGURATION = {
   flakes: CerealFlakes.BIO,
   fluid: CerealFluid.OAT_MILK,
-  extras: [CerealExtra.RAISINS]
+  extras: [CerealExtra.RAISINS] as CerealExtra[]
 }
+
+type LowMaintenanceConfig = typeof LOW_MAINTENANCE_CONFIGURATION
+
+function betterConfigurateCereal(config: Partial<LowMaintenanceConfig>): LowMaintenanceConfig {
+  return {
+    ...LOW_MAINTENANCE_CONFIGURATION,
+    ...config,
+  }
+}
+
+console.log(betterConfigurateCereal({
+  fluid: CerealFluid.WATER,
+  extras: [] // you will hate them too: https://www.youtube.com/watch?v=jyn_MFPkAds
+}))

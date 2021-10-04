@@ -12,7 +12,6 @@ const AdventurerDebts: Debts = {
   others: [422]
 }
 
-
 function writeInsolvencyLetter(): Readonly<Debts> {
   // ... Hopefully Peter Zwegart won't notice that action
   return Object.freeze(AdventurerDebts)
@@ -20,8 +19,12 @@ function writeInsolvencyLetter(): Readonly<Debts> {
 
 const AdventurerInsolvency = writeInsolvencyLetter()
 
+// throws an error since the property is read-only
+AdventurerInsolvency.city = 1000
+AdventurerInsolvency.others.push(1000)
+
 /**
+ * TODO: you forgot it!
  * It's me Andrej from the past!
  * I just realized that you should explain `ReadonlyArray`
- * after you finished with 07-Omit
  */

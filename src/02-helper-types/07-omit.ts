@@ -9,7 +9,7 @@ type CerealExtra = keyof typeof CerealExtrasAsEnum
 type SelectableCerealExtras = Record<CerealExtra, boolean>
 
 // i can't be the only one
-const YeetDezRaisins: SelectableCerealExtras = {
+const YeetDezRaisins: Omit<SelectableCerealExtras, 'RAISINS'> = {
   WALNUTS: true,
   CHOCOLATE: true,
   STRAWBERRIES: true

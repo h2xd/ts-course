@@ -10,10 +10,13 @@ const AdventurerInventory: Inventory = {
   money: 1_000_000
 }
 
-function startTavernTravel(): Partial<Inventory> {
+type PartialInventory = Partial<Inventory>
 
+function startTavernTravel(): PartialInventory {
+  return {
+    money: 1000
+  }
 }
-
 
 startTavernTravel()
 console.log(AdventurerInventory)
